@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit3aa8807de7f4f7e79d809f17e0f890b4
+class ComposerStaticInit389a755a6d38debb1b1de4a73ab596f4
 {
     public static $files = array (
         '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
@@ -16,13 +16,23 @@ class ComposerStaticInit3aa8807de7f4f7e79d809f17e0f890b4
         'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
-        '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
+        '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         'e3b2795a8a512b6083af088fb53afe6c' => __DIR__ . '/..' . '/codeception/codeception/functions.php',
+        'e39a8b23c42d4e1452234d762b03835a' => __DIR__ . '/..' . '/ramsey/uuid/src/functions.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
+        '2a3c2110e8e0295330dc3d11a4cbc4cb' => __DIR__ . '/..' . '/php-webdriver/webdriver/lib/Exception/TimeoutException.php',
     );
 
     public static $prefixLengthsPsr4 = array (
+        'Y' => 
+        array (
+            'Yandex\\Allure\\Adapter\\' => 22,
+        ),
+        'T' => 
+        array (
+            'Tests\\' => 6,
+        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
@@ -34,6 +44,7 @@ class ComposerStaticInit3aa8807de7f4f7e79d809f17e0f890b4
             'Symfony\\Component\\Yaml\\' => 23,
             'Symfony\\Component\\VarDumper\\' => 28,
             'Symfony\\Component\\String\\' => 25,
+            'Symfony\\Component\\Process\\' => 26,
             'Symfony\\Component\\Finder\\' => 25,
             'Symfony\\Component\\EventDispatcher\\' => 34,
             'Symfony\\Component\\DomCrawler\\' => 29,
@@ -41,13 +52,25 @@ class ComposerStaticInit3aa8807de7f4f7e79d809f17e0f890b4
             'Symfony\\Component\\Console\\' => 26,
             'Symfony\\Component\\BrowserKit\\' => 29,
         ),
+        'R' => 
+        array (
+            'Ramsey\\Uuid\\' => 12,
+            'Ramsey\\Collection\\' => 18,
+        ),
+        'Q' => 
+        array (
+            'Qameta\\Allure\\Codeception\\' => 26,
+            'Qameta\\Allure\\' => 14,
+        ),
         'P' => 
         array (
             'Psy\\' => 4,
+            'Psr\\Log\\' => 8,
             'Psr\\Http\\Message\\' => 17,
             'Psr\\Http\\Client\\' => 16,
             'Psr\\EventDispatcher\\' => 20,
             'Psr\\Container\\' => 14,
+            'Psr\\Cache\\' => 10,
             'PhpParser\\' => 10,
         ),
         'M' => 
@@ -60,8 +83,14 @@ class ComposerStaticInit3aa8807de7f4f7e79d809f17e0f890b4
             'GuzzleHttp\\Promise\\' => 19,
             'GuzzleHttp\\' => 11,
         ),
+        'F' => 
+        array (
+            'Facebook\\WebDriver\\' => 19,
+        ),
         'D' => 
         array (
+            'Doctrine\\Common\\Lexer\\' => 22,
+            'Doctrine\\Common\\Annotations\\' => 28,
             'DeepCopy\\' => 9,
         ),
         'C' => 
@@ -71,11 +100,20 @@ class ComposerStaticInit3aa8807de7f4f7e79d809f17e0f890b4
         ),
         'B' => 
         array (
+            'Brick\\Math\\' => 11,
             'Behat\\Gherkin\\' => 14,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'Yandex\\Allure\\Adapter\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/allure-framework/allure-php-commons/src/Legacy',
+        ),
+        'Tests\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/tests',
+        ),
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
@@ -112,6 +150,10 @@ class ComposerStaticInit3aa8807de7f4f7e79d809f17e0f890b4
         array (
             0 => __DIR__ . '/..' . '/symfony/string',
         ),
+        'Symfony\\Component\\Process\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/process',
+        ),
         'Symfony\\Component\\Finder\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/finder',
@@ -136,9 +178,29 @@ class ComposerStaticInit3aa8807de7f4f7e79d809f17e0f890b4
         array (
             0 => __DIR__ . '/..' . '/symfony/browser-kit',
         ),
+        'Ramsey\\Uuid\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ramsey/uuid/src',
+        ),
+        'Ramsey\\Collection\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ramsey/collection/src',
+        ),
+        'Qameta\\Allure\\Codeception\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/allure-framework/allure-codeception/src',
+        ),
+        'Qameta\\Allure\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/allure-framework/allure-php-commons/src',
+        ),
         'Psy\\' => 
         array (
             0 => __DIR__ . '/..' . '/psy/psysh/src',
+        ),
+        'Psr\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/log/src',
         ),
         'Psr\\Http\\Message\\' => 
         array (
@@ -156,6 +218,10 @@ class ComposerStaticInit3aa8807de7f4f7e79d809f17e0f890b4
         'Psr\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
+        ),
+        'Psr\\Cache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/cache/src',
         ),
         'PhpParser\\' => 
         array (
@@ -177,6 +243,18 @@ class ComposerStaticInit3aa8807de7f4f7e79d809f17e0f890b4
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
         ),
+        'Facebook\\WebDriver\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-webdriver/webdriver/lib',
+        ),
+        'Doctrine\\Common\\Lexer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/lexer/src',
+        ),
+        'Doctrine\\Common\\Annotations\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/annotations/lib/Doctrine/Common/Annotations',
+        ),
         'DeepCopy\\' => 
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
@@ -190,6 +268,10 @@ class ComposerStaticInit3aa8807de7f4f7e79d809f17e0f890b4
             0 => __DIR__ . '/..' . '/codeception/codeception/src/Codeception',
             1 => __DIR__ . '/..' . '/codeception/stub/src',
         ),
+        'Brick\\Math\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/brick/math/src',
+        ),
         'Behat\\Gherkin\\' => 
         array (
             0 => __DIR__ . '/..' . '/behat/gherkin/src',
@@ -200,6 +282,9 @@ class ComposerStaticInit3aa8807de7f4f7e79d809f17e0f890b4
         'Codeception\\Constraint\\Crawler' => __DIR__ . '/..' . '/codeception/lib-innerbrowser/src/Codeception/Constraint/Crawler.php',
         'Codeception\\Constraint\\CrawlerNot' => __DIR__ . '/..' . '/codeception/lib-innerbrowser/src/Codeception/Constraint/CrawlerNot.php',
         'Codeception\\Constraint\\Page' => __DIR__ . '/..' . '/codeception/lib-web/src/Constraint/Page.php',
+        'Codeception\\Constraint\\WebDriver' => __DIR__ . '/..' . '/codeception/module-webdriver/src/Codeception/Constraint/WebDriver.php',
+        'Codeception\\Constraint\\WebDriverNot' => __DIR__ . '/..' . '/codeception/module-webdriver/src/Codeception/Constraint/WebDriverNot.php',
+        'Codeception\\Exception\\ConnectionException' => __DIR__ . '/..' . '/codeception/module-webdriver/src/Codeception/Exception/ConnectionException.php',
         'Codeception\\Exception\\ElementNotFound' => __DIR__ . '/..' . '/codeception/lib-web/src/Exception/ElementNotFound.php',
         'Codeception\\Exception\\ExternalUrlException' => __DIR__ . '/..' . '/codeception/lib-innerbrowser/src/Codeception/Exception/ExternalUrlException.php',
         'Codeception\\Exception\\MalformedLocatorException' => __DIR__ . '/..' . '/codeception/lib-web/src/Exception/MalformedLocatorException.php',
@@ -216,6 +301,7 @@ class ComposerStaticInit3aa8807de7f4f7e79d809f17e0f890b4
         'Codeception\\Module\\AbstractAsserts' => __DIR__ . '/..' . '/codeception/module-asserts/src/Codeception/Module/AbstractAsserts.php',
         'Codeception\\Module\\Asserts' => __DIR__ . '/..' . '/codeception/module-asserts/src/Codeception/Module/Asserts.php',
         'Codeception\\Module\\PhpBrowser' => __DIR__ . '/..' . '/codeception/module-phpbrowser/src/Codeception/Module/PhpBrowser.php',
+        'Codeception\\Module\\WebDriver' => __DIR__ . '/..' . '/codeception/module-webdriver/src/Codeception/Module/WebDriver.php',
         'Codeception\\PHPUnit\\TestCase' => __DIR__ . '/..' . '/codeception/codeception/src/PHPUnit/TestCase.php',
         'Codeception\\Util\\HttpCode' => __DIR__ . '/..' . '/codeception/lib-innerbrowser/src/Codeception/Util/HttpCode.php',
         'Codeception\\Util\\Locator' => __DIR__ . '/..' . '/codeception/lib-web/src/Util/Locator.php',
@@ -1518,9 +1604,9 @@ class ComposerStaticInit3aa8807de7f4f7e79d809f17e0f890b4
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit3aa8807de7f4f7e79d809f17e0f890b4::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit3aa8807de7f4f7e79d809f17e0f890b4::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit3aa8807de7f4f7e79d809f17e0f890b4::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit389a755a6d38debb1b1de4a73ab596f4::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit389a755a6d38debb1b1de4a73ab596f4::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit389a755a6d38debb1b1de4a73ab596f4::$classMap;
 
         }, null, ClassLoader::class);
     }

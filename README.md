@@ -29,6 +29,7 @@ ___
 
 - PHP
 - Composer
+- Powershell 5.1+ (windows)
 
 
 **Clone repository:** 
@@ -49,6 +50,8 @@ php vendor/bin/codecept generate:suite acceptance Acceptance
 ```
 **Allure install:** 
 ```
+irm get.scoop.sh | iex
+scoop install allure
 composer require "allure-framework/allure-codeception" --dev
 ```
 **Docker build:** 

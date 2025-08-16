@@ -2,6 +2,13 @@
     "require-dev": {
         "codeception/codeception": "^5.3",
         "codeception/module-phpbrowser": "*",
-        "codeception/module-asserts": "*"
+        "codeception/module-asserts": "*",
+        "allure-framework/allure-codeception": "^2.4",
+        "codeception/module-webdriver": "^4.0"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
     }
 }
