@@ -68,13 +68,6 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
 ```
 ___
 
-## Reporting
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
-
-___
-
 ## Running with Docker
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
@@ -83,13 +76,6 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
 ___
 
 ## Running with Docker Compose
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
-
-___
-
-## Codeception Test Example
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.

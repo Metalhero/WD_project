@@ -6,7 +6,7 @@ declare(strict_types=1);
 namespace Tests\Acceptance;
 
 use Tests\Support\AcceptanceTester;
-use Tests\Support\Enums\Core as FieldType;
+use Tests\Support\Enums\FieldTypes;
 
 final class RestfulBookerPlatformCest
 {
@@ -20,10 +20,12 @@ final class RestfulBookerPlatformCest
         $I->amOnPage('/');
         $I->waitForText('Check Availability & Book Your Stay', 30);
         $I->see('Check Availability & Book Your Stay');
-        $I->click("//a[@class='btn btn-primary btn-lg']");
-        $I->click("(//a[contains(@class, 'btn-primary')])[3]");
+        $I->myClick('Book Now');
+        //$I->click("//a[@class='btn btn-primary btn-lg']");
+        $I->myClick('Book now', 2);
+        //$I->click("(//a[contains(@class, 'btn-primary')])[3]");
         $I->waitForText('Room Description', 3);
-        $I->scrollTo("//small[contains(., \"restful-booker-platform\")]");
-        $I->myFill('Sample Text', FieldType::TEXT);
+        $I->myClick('Reserve Now');
+        $I->myFill("Firstname", "SGY", FieldTypes::TEXT);
     }
 }
