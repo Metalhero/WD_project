@@ -1,3 +1,4 @@
+# Dockerfile
 FROM php:8.3-cli
 
 # Composer
@@ -16,10 +17,18 @@ RUN apt-get update && apt-get install -y \
  && rm allure-2.29.0.zip
 
 WORKDIR /app
-COPY . .
 
-# PHP függőségek telepítése
+# Először csak composer fájlok, gyorsabb cache buildhez (opcionális)
+COPY composer.json composer.lock ./
 RUN composer install --no-interaction --prefer-dist
 
-# Alapértelmezett parancs: Codeception futtatása+ generate Allure report + start server
-CMD vendor/bin/codecept run --ext Allure && allure serve tests/_output/allure-results -p 8080
+# Másoljuk be a teljes projektet
+COPY . .
+
+# Másoljuk be az entrypoint scriptet fixeléssel (CRLF -> LF) és chmod-oljuk
+COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
+RUN sed -i 's/\r$//' /usr/local/bin/docker-entrypoint.sh \
+ && chmod +x /usr/local/bin/docker-entrypoint.sh
+
+# ENTRYPOINT exec formában (jelek forwarding miatt)
+ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
